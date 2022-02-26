@@ -13,8 +13,8 @@ const runCommand = command => {
 }
 
 // const repoName = process.argv[2];
-const repoName = `stackbit-dev-playground`;
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/stackbitsales/rylands-starter ${repoName}`;
+const repoName = `stackbit-playground`;
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/stackbitsales/stackbit-playground ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install`;
 
 console.log(`Cloning the repository with name ${repoName}`);
