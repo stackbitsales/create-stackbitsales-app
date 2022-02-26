@@ -1,10 +1,11 @@
 {
-    "name": "starter-nextjs-theme",
-    "version": "0.1.0",
+    "name": "create-stackbit-dev-playground",
+    "version": "0.1.7",
     "engines": {
-        "node": ">=14 <16",
+        "node": ">=14",
         "npm": "~6"
     },
+    "bin": "./bin/cli.js",
     "scripts": {
         "dev": "next dev",
         "build": "next build && next export",
