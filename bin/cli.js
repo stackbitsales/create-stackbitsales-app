@@ -25,7 +25,9 @@ console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 if(!installedDeps) process.exit(-1);
 
-console.log("🎉 Congratulations! You're ready to go. Here are the next steps:")
-console.log(`🚧 [Terminal 1] cd ${repoName} && npm install && npm run dev`);
-console.log(`🚧 [Terminal 2] cd ${repoName} && npm install -g @stackbit/cli && stackbit dev`);
+console.log("🎉 Congratulations! You're ready to go.")
+console.log("👇 Here are the next steps:")
+console.log(`🚧 [Terminal Window 1] cd ${repoName} && npm install && npm run dev`);
+console.log(`🚧 [Terminal Window 2] cd ${repoName} && npm install -g @stackbit/cli && stackbit dev`);
 console.log(`✅ Happy building! 🎉`);
+console.log(`🧑‍🏫 Tutorial: https://youtu.be/YgJI1dL0Vqs`);
