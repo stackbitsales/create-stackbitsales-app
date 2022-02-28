@@ -25,9 +25,10 @@ console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 if(!installedDeps) process.exit(-1);
 
-console.log("🎉 Congratulations! You're ready to go.")
-console.log("👇 Here are the next steps:")
-console.log(`🚧 [Terminal Window 1] cd ${repoName} && npm install && npm run dev`);
-console.log(`🚧 [Terminal Window 2] cd ${repoName} && npm install -g @stackbit/cli && stackbit dev`);
-console.log(`✅ Happy building! 🎉`);
-console.log(`🧑‍🏫 Tutorial: https://youtu.be/YgJI1dL0Vqs`);
+console.log("🎉 Congratulations!")
+console.log("👇 Next steps:")
+console.log(`1️⃣ [In the terminal] Run: cd ${repoName}, then: npm install, then: npm run dev`);
+console.log(`2️⃣ [Open a new terminal window] Run: cd ${repoName}, then: npm install -g @stackbit/cli, then: stackbit dev`);
+console.log(`3️⃣ [Open the repo in your IDE (VS Code, Sublime, etc)]`);
+console.log(`4️⃣ [Open the https://app.stackbit.com/... output in step 2]`);
+console.log(`🧑‍🏫 Follow this tutorial: https://youtu.be/YgJI1dL0Vqs`);
