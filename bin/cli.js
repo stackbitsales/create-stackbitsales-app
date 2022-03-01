@@ -13,7 +13,18 @@ const runCommand = command => {
 }
 
 // const repoName = process.argv[2];
-const repoName = `stackbit-playground`;
+let repoName;
+
+if ( typeof process.argv[2] !== 'undefined' && process.argv[2] )
+{
+  //do stuff if query is defined and not null
+  repoName = `stackbit-playground`;
+}
+else
+{
+  repoName = process.argv[2];
+}
+
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/stackbitsales/stackbit-playground ${repoName}`;
 const installDepsCommand = `cd ${repoName} && npm install`;
 
