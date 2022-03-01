@@ -1,13 +1,15 @@
 {
     "name": "create-stackbit-playground",
-    "version": "0.1.10",
+    "version": "0.1.11",
     "engines": {
         "node": ">=14",
         "npm": "~6"
     },
     "bin": "./bin/cli.js",
     "scripts": {
-        "dev": "next dev",
+        "dev": "npm-run-all --parallel next:dev stackbit:dev",
+        "next:dev": "next dev",
+        "stackbit:dev": "stackbit dev",
         "build": "next build && next export",
         "start": "next start",
         "export": "next export",
