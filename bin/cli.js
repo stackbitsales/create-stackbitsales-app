@@ -15,7 +15,6 @@ const runCommand = command => {
 let repoName = process.argv[2];
 
 if ( repoName == null ) {
-  // Do stuff if query is defined and not null
   repoName = `stackbit-playground`;
 }
 
