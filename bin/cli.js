@@ -25,6 +25,8 @@ console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
+runCommand(`echo $PWD`);
+
 console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
