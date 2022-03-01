@@ -7,7 +7,7 @@
     },
     "bin": "./bin/cli.js",
     "scripts": {
-        "dev": "npm-run-all --parallel next:dev stackbit:dev",
+        "dev": "node ./bin/runDev.js",
         "next:dev": "next dev",
         "stackbit:dev": "stackbit dev --open",
         "build": "next build && next export",
