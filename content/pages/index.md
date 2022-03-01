@@ -5,19 +5,9 @@ sections:
   - type: HeroSection
     elementId: homepage-hero-1
     colors: colors-a
-    title: 'Love your work. Work loves you.'
-    subtitle: 'One platform, one community.'
-    actions:
-      - type: Button
-        label: Get Started
-        url: 'https://www.stackbit.com/'
-        style: primary
-      - type: Link
-        label: Learn More
-        url: /
-        showIcon: true
-        icon: arrowRight
-        iconPosition: right
+    title: Welcome to the Stackbit Playground!
+    subtitle: You code. Marketers edit. It's as simple as that.
+    actions: []
     media:
       type: ImageBlock
       url: /images/hero.png
@@ -48,6 +38,20 @@ sections:
         textAlign: left
       actions:
         justifyContent: flex-start
+    text: >+
+      Stackbit is a site builder. One where you own and can customize a clean
+      Next.js repo. And creators can visually edit anything you allow.
+
+
+      Here are some places to get started:
+
+
+      *   [Getting Started Tutorial](https://youtu.be/YgJI1dL0Vqs?t=188)
+
+
+      *   [How Stackbit
+      Works](https://docs.stackbit.com/conceptual-guides/how-stackbit-works/)
+
   - elementId: ''
     colors: colors-f
     backgroundSize: inset
@@ -143,7 +147,7 @@ sections:
         caption: ZCOOL
     spacing: 3
     columns: 7
-    aspectRatio: 'auto'
+    aspectRatio: auto
     showCaption: false
     enableHover: false
     styles:
@@ -378,12 +382,13 @@ sections:
   - elementId: ''
     colors: colors-a
     variant: variant-b
-    title: We sometimes write things. You should read it, it might shed some
-      light on why we’re doing what we’re doing
+    title: >-
+      We sometimes write things. You should read it, it might shed some light on
+      why we’re doing what we’re doing
     actions:
       - type: Link
         label: See all posts
-        url: '/blog'
+        url: /blog
         showIcon: true
         icon: arrowRight
     posts:
