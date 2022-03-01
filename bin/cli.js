@@ -12,17 +12,11 @@ const runCommand = command => {
     return true;
 }
 
-// const repoName = process.argv[2];
-let repoName;
+let repoName = process.argv[2];
 
-if ( typeof process.argv[2] !== 'undefined' && process.argv[2] )
-{
-  //do stuff if query is defined and not null
+if ( repoName == null ) {
+  // Do stuff if query is defined and not null
   repoName = `stackbit-playground`;
-}
-else
-{
-  repoName = process.argv[2];
 }
 
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/stackbitsales/stackbit-playground ${repoName}`;
@@ -38,7 +32,7 @@ if(!installedDeps) process.exit(-1);
 
 console.log("🎉 Congratulations!")
 console.log("👇 Next steps:")
-console.log(`1️⃣ [In the terminal] Run: cd ${repoName}, then: npm install, then: npm run dev`);
+console.log(`1️⃣ [In the terminal] Run: cd ${repoName}, then: npm run dev`);
 console.log(`2️⃣ [Open a new terminal window] Run: cd ${repoName}, then: sudo npm install -g @stackbit/cli, then: stackbit dev`);
 console.log(`3️⃣ [Open the repo in your IDE (VS Code, Sublime, etc)]`);
 console.log(`4️⃣ [Open the https://app.stackbit.com/... output in step 2]`);
