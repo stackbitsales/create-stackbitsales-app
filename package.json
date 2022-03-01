@@ -35,7 +35,7 @@
     },
     "devDependencies": {
         "@next/bundle-analyzer": "^11.1.2",
-        "@stackbit/cli": "^0.1.25",
+        "@stackbit/cli": "^0.2.3",
         "@types/react": "^17.0.37",
         "autoprefixer": "^10.2.6",
         "eslint": "^7.29.0",
