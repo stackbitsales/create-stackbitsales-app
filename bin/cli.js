@@ -19,21 +19,18 @@ if (repoName == null) {
 }
 
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/stackbitsales/stackbit-playground ${repoName}`;
-// const installDepsCommand = `cd ${repoName} && npm install`;
+const installDepsCommand = `cd ${repoName} && npm install`;
 
 console.log(`Cloning the repository with name ${repoName}`);
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
 console.log(`Installing dependencies for ${repoName}`);
-const changeDirectory = runCommand(`cd ${repoName}`);
-if (!changeDirectory) process.exit(-1);
-
-const installedDeps = runCommand(`npm install`);
+const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
 console.log('🎉 Congratulations!');
 console.log('👇 Next steps:');
-console.log(`1️⃣ Run: npm run dev`);
+console.log(`1️⃣ Run: cd ${repoName}, then: npm run dev`);
 console.log(`2️⃣ [Open the https://app.stackbit.com/... output in step 2]`);
 console.log(`🧑‍🏫 Follow this tutorial: https://youtu.be/YgJI1dL0Vqs`);
