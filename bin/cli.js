@@ -29,6 +29,5 @@ console.log(`Installing dependencies for ${repoName}`);
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
-console.log('🎉👇 Next steps');
-console.log(`1️⃣ Run: cd ${repoName} && npm run dev`);
-// console.log(`2️⃣ Open the https://app.stackbit.com/local/STRING.`);
+console.log('🎉👇 Next step');
+console.log(`Run: cd ${repoName} && npm run dev`);
