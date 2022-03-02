@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+const open = require('open');
 const { exec } = require('child_process');
 
 const command = 'npm-run-all --parallel next:dev stackbit:dev';
@@ -9,11 +10,11 @@ const devProcess = exec(command, (err) => {
 });
 
 devProcess.stdout.on('data', (data) => {
-  const urlMatching = data.match(/Open (.*?) in your/);
+  const urlMatching = data.match(/(https:\/\/app\.stackbit\.com\/local\/.*?)\s/);
 
   if (urlMatching) {
     console.log(`Opening local editor in browser (${urlMatching[1]})`)
-    exec(`open ${urlMatching[1]}`);
+    open(urlMatching[1]);
   } else {
     console.log(data.trim());
   }
