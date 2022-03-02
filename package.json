@@ -1,6 +1,6 @@
 {
     "name": "create-stackbit-playground",
-    "version": "0.1.14",
+    "version": "0.1.15",
     "engines": {
         "node": ">=14",
         "npm": "~6"
